@@ -1,0 +1,95 @@
+site_name: Hardware & Software
+markdown_extensions:
+  - meta
+  - attr_list
+  - md_in_html
+  - admonition
+  - abbr
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+theme:
+    name: material
+    language: fr
+    highlightjs: true
+    font: false
+    logo: assets/logo.png
+    palette:
+        - scheme: default
+          primary: blue
+          accent: light blue
+          toggle:
+              icon: material/weather-night
+              name: Passer en mode sombre
+        - scheme: slate
+          primary: light blue
+          accent: cyan
+          toggle:
+              icon: material/weather-sunny
+              name: Passer en mode clair
+    features:
+        - navigation.top
+        - navigation.sections
+        - navigation.expand
+    icon:
+        admonition:
+        note: octicons/tag-16
+        abstract: octicons/checklist-16
+        info: octicons/info-16
+        tip: octicons/squirrel-16
+        success: octicons/check-16
+        question: octicons/question-16
+        warning: octicons/alert-16
+        failure: octicons/x-circle-16
+        danger: octicons/zap-16
+        bug: octicons/bug-16
+        example: octicons/beaker-16
+        quote: octicons/quote-16
+
+nav:
+    - 'Accueil': index.md
+    - "Introduction à l'informatique":
+        - "Historique": bases/history.md
+        - "Le microprocesseur": bases/hardware/cpu.md
+        - "La mémoire": bases/hardware/memory.md
+        - "Evolution des langages de programmation": bases/languages.md
+    #- 'Les bases de la programmation':
+        #- 'Les données':
+            #- bases/data/index.md
+            #- 'Le binaire': bases/data/types/binary.md
+            #- 'Les nombres entiers': bases/data/types/integers.md
+            #- 'Les nombres à virgule': bases/data/types/floating.md
+            #- 'Le texte': bases/data/types/texts.md
+            #- 'Les booléens': bases/data/types/booleans.md
+            #- 'Exercices': bases/data/types/exercises.md
+        #- 'Les instructions':
+            #- 'Les opérateurs':
+                #- 'Les opérations mathématiques': bases/instructions/operators/maths.md
+                #- 'Les comparaisons': bases/instructions/operators/test.md
+                #- 'Les opérations logiques': bases/instructions/operators/logic.md
+                #- 'Le décalage de bit': bases/instructions/operators/shift.md
+            #- 'Les conditions': bases/instructions/conditions.md
+            #- 'Les boucles': bases/instructions/loops.md
+        #- 'Les fonctions': bases/functions.md
