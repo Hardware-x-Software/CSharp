@@ -1,0 +1,516 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
+    
+    
+      
+        <title>La mémoire - Hardware & Software</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#la-memoire" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../.." title="Hardware &amp; Software" class="md-header__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Hardware & Software
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              La mémoire
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="cyan"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Hardware &amp; Software" class="md-nav__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
+      
+  <img src="../../../assets/logo.png" alt="logo">
+
+    </a>
+    Hardware & Software
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Accueil
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Introduction à l'informatique
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Introduction à l'informatique" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Introduction à l'informatique
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        Historique
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cpu/" class="md-nav__link">
+        Le microprocesseur
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          La mémoire
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        La mémoire
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chargement-depuis-un-peripherique-de-stockage" class="md-nav__link">
+    Chargement depuis un périphérique de stockage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adressage-memoire" class="md-nav__link">
+    Adressage mémoire
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../languages/" class="md-nav__link">
+        Evolution des langages de programmation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chargement-depuis-un-peripherique-de-stockage" class="md-nav__link">
+    Chargement depuis un périphérique de stockage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adressage-memoire" class="md-nav__link">
+    Adressage mémoire
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="la-memoire">La mémoire</h1>
+<p>Il existe plusieurs types de mémoire dans un ordinateur. Nous allons suivre le cheminement d'un programme du moment où on double-clique dessus jusqu'à son exécution par le processeur.</p>
+<p>Tout d'abord, le programme est contenu sur une mémoire qui est permanente y compris quand l'ordinateur est éteint. Il peut s'agir d'un disque dur magnétique ou de mémoire flash comme dans un SSD, une clé USB ou une puce de mémoire flash à l'intérieur d'un smartphone. Un disque dur magnétique ou de la mémoire flash est ce qu'on appelle de la <strong>mémoire de masse</strong>. Elle est abondante dans un ordinateur, actuellement plus téraoctets, et relativement peu chère en comparaison des autres types de mémoires. Plus la mémoire est rapide et, généralement, plus elle est chère et donc moins abondante.</p>
+<p>Lorsqu'on souhaite exécuter un programme, il est chargé tout ou partie depuis son emplacement sur la mémoire de masse vers la <strong>mémoire vive</strong> (RAM). Le programme va, au fur et à mesure de son exécution, avoir besoin de données encore présentes sur le disque et devra donc demander leur chargement en mémoire si nécessaire. Cette opération peut prendre plus ou moins de temps, notamment en fonction de la vitesse du disque et le débit disponible sur le bus (SATA, PCI-Express). La RAM est disponible pour le grand public à hauteur de plusieurs gigaoctets.</p>
+<p>Comme nous l'avons vu précédemment, l'exécution du programme se déroule à l'intérieur du processeur lequel est doté de <strong>registres</strong>. Avant de leur parvenir, le processeur va charger une partie du programme dans ses <strong>différents niveaux de cache</strong> pour s'alimenter plus rapidement en instructions et en données à traiter. Il met régulièrement à jour son cache depuis ou vers la mémoire vive pour poursuivre l'exécution du programme. Plus la quantité de cache est grande, moins les aller-retours seront fréquents et donc plus le processeur pourra travailler efficacement. Suivant le modèle du processeur et le niveau du cache, la quantité de mémoire pourra aller de plusieurs mégaoctets (cache L3) à quelques centaines de kilooctets (cache L1). Le registres ferment la marche en ne faisant que quelques octets.</p>
+<h2 id="chargement-depuis-un-peripherique-de-stockage">Chargement depuis un périphérique de stockage</h2>
+<p>Pour un système multitâche, attendre que des données se chargent depuis un périphérique (disque dur, CD, clé USB, etc) vers la mémoire principale monopolise inutilement le microprocesseur. Il existe donc, pour certains bus de données largement utilisés de nos jours, des chargements de données n'impliquant pas directement le processeur. Celui-ci va seulement initier et terminer le transfert des données et c'est un contrôleur annexe qui va s'occuper de faire transférer les données depuis le périphérique. Pendant ce temps, le CPU peut s'adonner à d'autres tâches comme exécuter un ou plusieurs autres processus. Il en va exactement de même pour écrire les données vers l'un de ces périphériques.<br/>
+Les détails à ce sujet sortent totalement de la portée des tutoriels à venir donc ils ne seront pas davantage expliqués ici. Cependant, un exemple de contrôleur qui assiste le microprocesseur nous pouvons évoquer l'<strong>accès direct à la mémoire</strong>, ou DMA pour <a href="https://fr.wikipedia.org/wiki/Acc%C3%A8s_direct_%C3%A0_la_m%C3%A9moire"><em>Direct Memory Access</em></a> en anglais.</p>
+<h2 id="adressage-memoire">Adressage mémoire</h2>
+<p>La mémoire principale de l'ordinateur peut-être vue comme une immense rue dans une ville où une case-mémoire serait une maison. Chaque case-mémoire peut accueillir une unique valeur de 8 bits, ce qu'on appelle un <strong>octet</strong>. Un ordinateur <em>gamer</em> moyen possède généralement 16 gigaoctets de RAM en 2022, soit 16 milliards d'octets.</p>
+<p>Comme dans une ville, chaque maison a une adresse unique. Dans la mémoire, c'est pareil car une case-mémoire possède sa propre adresse. Ici, l'<strong>adresse mémoire</strong> est un nombre, qui s'incrémente pour chaque case-mémoire successive. On a donc une case-mémoire à l'adresse 0, puis 1, ensuite 2, et ainsi de suite jusqu'à la dernière.</p>
+<p>De nos jours, le CPU de nos ordinateurs personnels n'accède plus directement à la mémoire vive par les <strong>adresses physiques</strong>, c'est-à-dire le véritable numéro de l'adresse dans la mémoire. En effet, pour éviter qu'un processus écrive ou accède à la zone de la mémoire utilisée par un autre processus, un composant vient s'intercaler entre le microprocesseur et la RAM. Ce composant est l'<strong>unité de gestion de la mémoire</strong>, abrégé en anglais par MMU pour <em>memory management unit</em>. La MMU est intégrée au CPU bien qu'initialement dans un circuit intégré dédié.
+Le processeur ne manipule alors plus des adresses physiques lorsqu'il exécute un processus mais des <strong>adresses virtuelles</strong>. Un des rôles de la MMU est de traduire les adresses virtuelles en adresses physiques pour récupérer ou stocker des données dans la RAM. Par le biais de la MMU, le système d'exploitation peut effectuer plusieurs choses intéressantes :</p>
+<ul>
+<li>Tout d'abord, il peut protéger l'accès et l'écriture de données dans des régions de la mémoire vive qui sont occupées par d'autres processus. Cela évite de pouvoir récupérer les données d'un autre processus ou de corrompre/injecter des données dans l'exécution d'un autre processus. Par exemple si un programme vient à consommer toute la mémoire vive du système ;</li>
+<li>Comme pour un disque dur, la mémoire vive peut être fragmentée. Grâce à la MMU, le processeur n'a pas à se préoccuper de cette fragmentation et agit comme la mémoire était contiguë ;</li>
+<li>D'un point de vue d'un processus (et du processeur), la mémoire vive est illimitée grâce à la mémoire virtuelle.</li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Comment fonctionne un débogueur ?</p>
+<p>Un débogueur est un processus qui s'attache à un autre processus. Il permet d'y détecter les erreurs et problèmes durant son exécution et facilite ainsi la correction de bugs. Il a un accès total à la mémoire du processus attaché pour en inspecter les valeurs voire les modifier au cours de son exécution. Cela vient contredire ce qui a été décrit précédemment quant à la protection de la mémoire des processus à l'aide de la MMU ! Il ne faut pas oublier que c'est le système d'exploitation qui dicte le fonctionnement de la MMU. Or, un débogueur utilise une <em>interface de programmation</em> (API) fournie par le système d'exploitation pour fonctionner.</p>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Retour en haut de la page
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+    
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
+      
+        
+        <a href="../cpu/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Le microprocesseur" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Le microprocesseur
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../languages/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Evolution des langages de programmation" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Evolution des langages de programmation
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.top", "navigation.sections", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.0238f547.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
