@@ -8,19 +8,19 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
-        <title>Hardware & Software</title>
+        <title>Le binaire - Hardware & Software</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -30,7 +30,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bienvenue" class="md-skip">
+        <a href="#le-binaire" class="md-skip">
           Aller au contenu
         </a>
       
@@ -72,9 +72,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="." title="Hardware &amp; Software" class="md-header__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
+    <a href="../../../../.." title="Hardware &amp; Software" class="md-header__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
       
-  <img src="assets/logo.png" alt="logo">
+  <img src="../../../../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -90,7 +90,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Accueil
+              Le binaire
             
           </span>
         </div>
@@ -148,9 +148,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Hardware &amp; Software" class="md-nav__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
+    <a href="../../../../.." title="Hardware &amp; Software" class="md-nav__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
       
-  <img src="assets/logo.png" alt="logo">
+  <img src="../../../../../assets/logo.png" alt="logo">
 
     </a>
     Hardware & Software
@@ -164,21 +164,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
         Accueil
       </a>
-      
     </li>
   
 
@@ -219,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/history/" class="md-nav__link">
+      <a href="../../../../intro/history/" class="md-nav__link">
         Des cailloux à l'informatique
       </a>
     </li>
@@ -233,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/cpu/" class="md-nav__link">
+      <a href="../../../../intro/cpu/" class="md-nav__link">
         Le microprocesseur
       </a>
     </li>
@@ -247,7 +237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/memory/" class="md-nav__link">
+      <a href="../../../../intro/memory/" class="md-nav__link">
         La mémoire
       </a>
     </li>
@@ -261,7 +251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/languages/" class="md-nav__link">
+      <a href="../../../../intro/languages/" class="md-nav__link">
         Historique des langages de programmation
       </a>
     </li>
@@ -309,9 +299,27 @@
                 
 
 
-<h1 id="bienvenue">Bienvenue</h1>
-<p>Bienvenue sur <strong>Hardware &amp; Software</strong> !</p>
-<p>Ici nous allons apprendre à programmer des logiciels (<em>softwares</em> en anglais), depuis les bases jusqu'au développement d'applications complexes. Pour le côté ludique, je te proposerai principalement de développer des jeux. Ils seront très simples au début puis nous irons ensemble voir comment en créer en 2D et même en 3D. Avec cela, je pourrai aussi t'expliquer la partie matérielle (<em>hardware</em> en anglais) tel que le fonctionnement d'une carte graphique ou d'un processeur.</p>
+<h1 id="le-binaire">Le binaire</h1>
+<p>Avant d'aborder le sujet des nombres utilisés dans un programme, parlons un peu de la représentation de ceux-ci en binaire.<br/>
+Un ordinateur fonctionne à l'électricité. Or, l'électricité n'a pas d'autre possibilité de varier qu'entre deux états : il y a du courant (0), ou il n'y en a pas (1). Ces valeurs binaires, <code>0</code> et <code>1</code>, sont les <strong>bits</strong>, pour <em>binary digits</em> en anglais. Bien sûr, limiter un ordinateur à compter jusqu'à 1 serait inutile pour des calculs scientifiques complexes ! Il devient plus intéressant de grouper les bits pour obtenir des nombres plus grands.</p>
+<p>Revenons sur la façon dont nous comptons en tant qu'humains. Tout système de calcul utilise ce qu'on appelle une base, qui définit - pour simplifier au maximum - à partir de quand on ajoute une puissance. Concrètement, prenons l'exemple de la base 10 que nous utilisons quotidiennement. Nous avons dix chiffres - dix, comme la base donc - allant de 0 à 9. Puis, pour passer à la valeur après 9, nous ajoutons une puissance : la dizaine. On passe alors de 9 à 10, un nombre constitué de deux chiffres. Nous restons à deux chiffres jusqu'à 99 où, pour passer à la valeur suivante, nous ajoutons encore une puissance : la centaine. Voici le schéma que nous obtenons :
+<div class="highlight"><pre><span></span><code>   0    1    2    3    4    5    6    7    8    9
+  10   11   12   13   14   15   16   17   18   19 [...]   90  91  92  93  94  95  96  97  98  99
+ 100  101  102  103  104  105  106  107  108  109 [...]  990 991 992 993 994 995 996 997 998 999
+1000 1001 1002 1003 1004 1005 1006 ....
+</code></pre></div></p>
+<p>Maintenant, appliquons le même principe dans le cas où nous ne pouvons plus compter jusqu'à 9 mais uniquement jusqu'à 1 avant d'augmenter la puissance. C'est-à-dire que nous nous comptons en base 2, puisque nous n'avons droit qu'à deux chiffres : 0 et 1. Dès que nous voudrons compter après 1, il faudra alors ajouter une puissance ! Nous obtiendons (10)<sub>2</sub>, puis (11)<sub>2</sub>, puis (100)<sub>2</sub>, (101)<sub>2</sub>, etc... Voici les nombres allant de 0 à 15 en binaire :
+<div class="highlight"><pre><span></span><code>   0    1
+  10   11
+ 100  101  110  111
+1000 1001 1010 1011 1100 1101 1110 1111
+</code></pre></div></p>
+<div class="admonition info">
+<p class="admonition-title">Remarques</p>
+<p>Les nombres pairs finissent toujours par 0 et les nombres impairs par 1.<br/>
+Pour distinguer un nombre écrit dans une base autre que la base 10, nous l'écrivons entre parenthèses avec la base en indice.</p>
+</div>
+<p>Pour connaître le nombre de valeurs codables sur un groupe de bits, on utilise tout simplement la formule 2<sup><em>n</em></sup> (2 à la puissance <em>n</em>) où <em>n</em> est le nombre de bits. Par exemple, pour savoir combien de valeur nous pouvons coder sur 2 bits, nous calculons 2<sup>2</sup> = 4. En effet, nous pouvons coder les valeurs suivantes : 0 (<code>00</code>), 1 (<code>01</code>), (10)<sub>2</sub> et (11)<sub>2</sub>.</p>
 
               
             </article>
@@ -327,29 +335,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-      
-    
-    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
-      
-      
-        
-        <a href="bases/intro/history/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Des cailloux à l&#39;informatique" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              Des cailloux à l'informatique
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -371,12 +356,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.top", "navigation.sections", "navigation.expand"], "search": "assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.top", "navigation.sections", "navigation.expand"], "search": "../../../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.0238f547.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.0238f547.min.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../../../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

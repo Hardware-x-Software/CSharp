@@ -8,19 +8,19 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
-        <title>Hardware & Software</title>
+        <title>Les boucles - Hardware & Software</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -30,7 +30,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bienvenue" class="md-skip">
+        <a href="#les-boucles" class="md-skip">
           Aller au contenu
         </a>
       
@@ -72,9 +72,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="." title="Hardware &amp; Software" class="md-header__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
+    <a href="../../../.." title="Hardware &amp; Software" class="md-header__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
       
-  <img src="assets/logo.png" alt="logo">
+  <img src="../../../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -90,7 +90,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Accueil
+              Les boucles
             
           </span>
         </div>
@@ -148,9 +148,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Hardware &amp; Software" class="md-nav__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
+    <a href="../../../.." title="Hardware &amp; Software" class="md-nav__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
       
-  <img src="assets/logo.png" alt="logo">
+  <img src="../../../../assets/logo.png" alt="logo">
 
     </a>
     Hardware & Software
@@ -164,21 +164,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
         Accueil
       </a>
-      
     </li>
   
 
@@ -219,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/history/" class="md-nav__link">
+      <a href="../../../intro/history/" class="md-nav__link">
         Des cailloux à l'informatique
       </a>
     </li>
@@ -233,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/cpu/" class="md-nav__link">
+      <a href="../../../intro/cpu/" class="md-nav__link">
         Le microprocesseur
       </a>
     </li>
@@ -247,7 +237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/memory/" class="md-nav__link">
+      <a href="../../../intro/memory/" class="md-nav__link">
         La mémoire
       </a>
     </li>
@@ -261,7 +251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/languages/" class="md-nav__link">
+      <a href="../../../intro/languages/" class="md-nav__link">
         Historique des langages de programmation
       </a>
     </li>
@@ -309,9 +299,24 @@
                 
 
 
-<h1 id="bienvenue">Bienvenue</h1>
-<p>Bienvenue sur <strong>Hardware &amp; Software</strong> !</p>
-<p>Ici nous allons apprendre à programmer des logiciels (<em>softwares</em> en anglais), depuis les bases jusqu'au développement d'applications complexes. Pour le côté ludique, je te proposerai principalement de développer des jeux. Ils seront très simples au début puis nous irons ensemble voir comment en créer en 2D et même en 3D. Avec cela, je pourrai aussi t'expliquer la partie matérielle (<em>hardware</em> en anglais) tel que le fonctionnement d'une carte graphique ou d'un processeur.</p>
+<h1 id="les-boucles">Les boucles</h1>
+<p>Nous venons de voir comment exécuter différents parties du code d'un programme suivant des <em>conditions</em>. Si le déroulement d'un programme dépendra des conditions satisfaites ou non, une chose reste sûre : le programme va se terminer. Dans le cas où nous voudrions répéter plusieurs fois l'exécution du programme, par exemple un jeu, il nous faudrait relancer autant de fois le programme. Cela est non seulement pénible mais en plus interdit tout comptage de points, car les données d'un programme sont perdues quand il s'arrête.</p>
+<p>Heureusement, il existe un moyen de répéter des portions de code dans un programme afin de les lui faire faire exécuter plusieurs fois : les <strong>boucles</strong>.</p>
+<p>Une boucle peut se répéter un nombre prédéfini de fois. On rentre une valeur constante en guise de nombre de répétitions.<br/>
+Elle peut se répéter indéfiniment. Dans le cas d'un jeu, ni l'ordinateur ni le joueur ne savent à l'avance combien de parties seront jouées.<br/>
+Elle peut aussi se répéter un nombre de fois déterminé mais avec un nombre variable. En reprenant un exemple de recette de cuisine, nous ne casserons pas autant d'oeufs, un à un, pour un gâteau suivant que nous le préparions pour 2, 4 ou 6 personnes. Il nous faudra plus ou moins d'oeufs selon le nombre de parts.</p>
+<p>Il existe différents type de boucles. Elles s'utilisent de façon similaire et nous choisirons la plus pratique à écrire suivant la situation.</p>
+<ul>
+<li>En général, quand nous avons un nombre - constant ou variable - de répétitions à effectuer, nous utilisons une boucle de type <code>pour une valeur de tant à tant</code>. <strong>Pour</strong> se traduisant par <strong>for</strong> en anglais, nous parlerons de boucle <code>for</code>.</li>
+<li>Quand nous voulons arrêter une boucle quand une condition devient fausse, nous utilisons la boucle <code>tant que</code>, qui se traduit par <code>while</code> en anglais.</li>
+</ul>
+<p>Une alternative à la boucle <code>while</code> est la boucle <code>do ... while</code> dont l'utilisation est plus rare.<br/>
+<code>while</code> débute en vérifiant si la condition est vraie. Elle ne lance donc le premier tour de boucle que si cette condition est vérifiée, sinon tout son code n'est pas exécuté du tout.<br/>
+<code>do ... while</code> ne vérifie la condition qu'à la fin de l'exécution du code qu'elle contient. Elle nous assure donc d'exécuter au moins une fois ce bout de code.</p>
+<div class="admonition warning">
+<p class="admonition-title">Boucles infinies</p>
+<p>L'utilisation de boucle est sujette aux boucles infinies. Cela arrive quand la condition pour laquelle la boucle doit s'arrêter ne peut <strong>jamais</strong> valoir FAUX. Il y a différentes situations possibles comme oublier de modifier la valeur de condition d'une boucle <code>while</code> ou attendre une valeur négative d'un nombre entier non signé.</p>
+</div>
 
               
             </article>
@@ -327,29 +332,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-      
-    
-    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
-      
-      
-        
-        <a href="bases/intro/history/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Des cailloux à l&#39;informatique" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              Des cailloux à l'informatique
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -371,12 +353,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.top", "navigation.sections", "navigation.expand"], "search": "assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.top", "navigation.sections", "navigation.expand"], "search": "../../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.0238f547.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.0238f547.min.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

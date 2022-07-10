@@ -8,19 +8,19 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
-        <title>Hardware & Software</title>
+        <title>Les opérations logiques - Hardware & Software</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -30,7 +30,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bienvenue" class="md-skip">
+        <a href="#les-operations-logiques" class="md-skip">
           Aller au contenu
         </a>
       
@@ -72,9 +72,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="." title="Hardware &amp; Software" class="md-header__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
+    <a href="../../../../.." title="Hardware &amp; Software" class="md-header__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
       
-  <img src="assets/logo.png" alt="logo">
+  <img src="../../../../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -90,7 +90,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Accueil
+              Les opérations logiques
             
           </span>
         </div>
@@ -148,9 +148,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Hardware &amp; Software" class="md-nav__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
+    <a href="../../../../.." title="Hardware &amp; Software" class="md-nav__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
       
-  <img src="assets/logo.png" alt="logo">
+  <img src="../../../../../assets/logo.png" alt="logo">
 
     </a>
     Hardware & Software
@@ -164,21 +164,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
         Accueil
       </a>
-      
     </li>
   
 
@@ -219,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/history/" class="md-nav__link">
+      <a href="../../../../intro/history/" class="md-nav__link">
         Des cailloux à l'informatique
       </a>
     </li>
@@ -233,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/cpu/" class="md-nav__link">
+      <a href="../../../../intro/cpu/" class="md-nav__link">
         Le microprocesseur
       </a>
     </li>
@@ -247,7 +237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/memory/" class="md-nav__link">
+      <a href="../../../../intro/memory/" class="md-nav__link">
         La mémoire
       </a>
     </li>
@@ -261,7 +251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/languages/" class="md-nav__link">
+      <a href="../../../../intro/languages/" class="md-nav__link">
         Historique des langages de programmation
       </a>
     </li>
@@ -297,6 +287,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#les-operateurs-logiques" class="md-nav__link">
+    Les opérateurs logiques
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#les-operateurs-bit-a-bit" class="md-nav__link">
+    Les opérateurs bit-à-bit
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -309,9 +321,74 @@
                 
 
 
-<h1 id="bienvenue">Bienvenue</h1>
-<p>Bienvenue sur <strong>Hardware &amp; Software</strong> !</p>
-<p>Ici nous allons apprendre à programmer des logiciels (<em>softwares</em> en anglais), depuis les bases jusqu'au développement d'applications complexes. Pour le côté ludique, je te proposerai principalement de développer des jeux. Ils seront très simples au début puis nous irons ensemble voir comment en créer en 2D et même en 3D. Avec cela, je pourrai aussi t'expliquer la partie matérielle (<em>hardware</em> en anglais) tel que le fonctionnement d'une carte graphique ou d'un processeur.</p>
+<h1 id="les-operations-logiques">Les opérations logiques</h1>
+<p>Nous avons vu pour les booléens la possibilité de faire de l'algèbre booléenne. Elle fait, elle aussi, intervenir plusieurs <strong>opérateurs</strong>. Nous pouvons par ailleurs séparer ces opérateurs en deux catégories : les opérateurs logiques et les opérateurs bit-à-bit.</p>
+<h2 id="les-operateurs-logiques">Les opérateurs logiques</h2>
+<p>Nous les avons déjà vu dans la section sur les booléens. Les revoici avec les symboles utilisés dans les langages de programmation pour les représenter :</p>
+<ul>
+<li>ET (<code>&amp;&amp;</code> ou plus rarement <code>and</code>) ;</li>
+<li>OU (<code>||</code> ou plus rarement <code>or</code>) ;</li>
+<li>NON (<code>!</code> ou plus rarement <code>not</code>) ;</li>
+<li>OU EXCLUSIF (<code>^</code> ou plus rarement <code>xor</code>).</li>
+</ul>
+<p>Ces opérateurs <strong>s'effectuent sur deux valeurs booléennes</strong> et donnent <strong>VRAI</strong> ou <strong>FAUX</strong>. On peut en récupérer ce résultat avec l'opérateur d'affectation <code>=</code> comme nous l'avons vu auparavant pour les opérations mathématiques.</p>
+<h2 id="les-operateurs-bit-a-bit">Les opérateurs bit-à-bit</h2>
+<p>Les opérateurs bit-à-bit <strong>s'effectuent sur des valeurs qui ne sont pas forcément booléennes</strong>, comme les nombres. Ils doivent leur nom au fait qu'il s'effectuent bit par bit, un peu comme si chaque bit composant une valeur binaire était un booléen.<br/>
+Ils sont très proches en terme de représentation dans le code mais leur effet est très différent. Cela peut être la source de nombreuses erreurs de programmation, attention !</p>
+<ul>
+<li>ET bit-à-bit (<code>&amp;</code>) ;</li>
+<li>OU bit-à-bit (<code>|</code>) ;</li>
+<li>OU EXCLUSIF (<code>^</code>) ;</li>
+<li>inversion de bit (<code>~</code>).</li>
+</ul>
+<p>On va voir ce que font ces opérateurs par l'exemple.<br/>
+Prenons deux valeurs, <code>a = 1100</code> et <code>b = 0110</code>.</p>
+<div class="admonition example">
+<p class="admonition-title">ET bit-à-bit</p>
+<p>On applique la règle de l'opérateur ET sur les deux bits en position 0, sur les bits en position 1, etc.<br/>
+<code>P.bit</code> indique la position des bits dans l'exemple ci-dessous.</p>
+<div class="highlight"><pre><span></span><code>P.bit = 3 2 1 0
+
+a =     1 1 0 0
+b =     0 1 1 0
+_______________
+a &amp; b = 0 1 0 0
+</code></pre></div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">OU bit-à-bit</p>
+<p>On applique la règle de l'opérateur OU sur les deux bits en position 0, sur les bits en position 1, etc.<br/>
+<code>P.bit</code> indique la position des bits dans l'exemple ci-dessous.</p>
+<div class="highlight"><pre><span></span><code>P.bit = 3 2 1 0
+
+a =     1 1 0 0
+b =     0 1 1 0
+_______________
+a | b = 1 1 1 0
+</code></pre></div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">OU EXCLUSIF (bit-à-bit)</p>
+<p>On applique la règle de l'opérateur OU EXCLUSIF sur les deux bits en position 0, sur les bits en position 1, etc.<br/>
+<code>P.bit</code> indique la position des bits dans l'exemple ci-dessous.</p>
+<div class="highlight"><pre><span></span><code>P.bit = 3 2 1 0
+
+a =     1 1 0 0
+b =     0 1 1 0
+_______________
+a ^ b = 1 0 1 0
+</code></pre></div>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Inversion de bit</p>
+<p>L'inversion de bit inverse la valeur de tous les bits : les 0 deviennent des 1 et les 1 deviennent des 0.</p>
+<div class="highlight"><pre><span></span><code>P.bit = 3 2 1 0
+
+a =     1 1 0 0
+_______________
+~a    = 0 0 1 1
+</code></pre></div>
+</div>
 
               
             </article>
@@ -327,29 +404,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-      
-    
-    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
-      
-      
-        
-        <a href="bases/intro/history/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Des cailloux à l&#39;informatique" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              Des cailloux à l'informatique
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -371,12 +425,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.top", "navigation.sections", "navigation.expand"], "search": "assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.top", "navigation.sections", "navigation.expand"], "search": "../../../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.0238f547.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.0238f547.min.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../../../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       

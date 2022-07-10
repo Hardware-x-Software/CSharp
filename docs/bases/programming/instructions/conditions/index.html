@@ -8,19 +8,19 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
     
     
       
-        <title>Hardware & Software</title>
+        <title>Les conditions - Hardware & Software</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.1d29e8d0.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -30,7 +30,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bienvenue" class="md-skip">
+        <a href="#les-conditions" class="md-skip">
           Aller au contenu
         </a>
       
@@ -72,9 +72,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="." title="Hardware &amp; Software" class="md-header__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
+    <a href="../../../.." title="Hardware &amp; Software" class="md-header__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
       
-  <img src="assets/logo.png" alt="logo">
+  <img src="../../../../assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -90,7 +90,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Accueil
+              Les conditions
             
           </span>
         </div>
@@ -148,9 +148,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Hardware &amp; Software" class="md-nav__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
+    <a href="../../../.." title="Hardware &amp; Software" class="md-nav__button md-logo" aria-label="Hardware & Software" data-md-component="logo">
       
-  <img src="assets/logo.png" alt="logo">
+  <img src="../../../../assets/logo.png" alt="logo">
 
     </a>
     Hardware & Software
@@ -164,21 +164,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
         Accueil
       </a>
-      
     </li>
   
 
@@ -219,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/history/" class="md-nav__link">
+      <a href="../../../intro/history/" class="md-nav__link">
         Des cailloux à l'informatique
       </a>
     </li>
@@ -233,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/cpu/" class="md-nav__link">
+      <a href="../../../intro/cpu/" class="md-nav__link">
         Le microprocesseur
       </a>
     </li>
@@ -247,7 +237,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/memory/" class="md-nav__link">
+      <a href="../../../intro/memory/" class="md-nav__link">
         La mémoire
       </a>
     </li>
@@ -261,7 +251,7 @@
   
   
     <li class="md-nav__item">
-      <a href="bases/intro/languages/" class="md-nav__link">
+      <a href="../../../intro/languages/" class="md-nav__link">
         Historique des langages de programmation
       </a>
     </li>
@@ -309,9 +299,50 @@
                 
 
 
-<h1 id="bienvenue">Bienvenue</h1>
-<p>Bienvenue sur <strong>Hardware &amp; Software</strong> !</p>
-<p>Ici nous allons apprendre à programmer des logiciels (<em>softwares</em> en anglais), depuis les bases jusqu'au développement d'applications complexes. Pour le côté ludique, je te proposerai principalement de développer des jeux. Ils seront très simples au début puis nous irons ensemble voir comment en créer en 2D et même en 3D. Avec cela, je pourrai aussi t'expliquer la partie matérielle (<em>hardware</em> en anglais) tel que le fonctionnement d'une carte graphique ou d'un processeur.</p>
+<h1 id="les-conditions">Les conditions</h1>
+<p>Après avoir définit les données et les opérations disponibles sur elles, il est temps de savoir ce que l'on peut en faire de façon plus avancée. En particulier, les valeurs et les opérateurs booléens vont être très utiles pour exécuter des portions de code dans un cas mais pas dans un autre. On parle de <strong>condition</strong> ou de <strong>branchement</strong>.</p>
+<p>Imaginons un programme qui sert à faire des divisions. Il demande le dividende à l'utilisateur puis le diviseur. Une propriété de la division est qu'il est <em>impossible de diviser par zéro</em>. Dans le cadre d'un programme, sans contrôle justement, la division par zéro conduit au mieux à une erreur, au pire au plantage du programme selon le langage utilisé pour le développer. Pour éviter cette situation nous voudrions indiquer à l'utilisateur que la division par zéro est impossible et ne pas effectuer la division par zéro. Nous pourrions avoir ce type de programmation.</p>
+<div class="highlight"><pre><span></span><code>demander dividende
+demander diviseur
+
+si diviseur == 0, alors :
+  écrire &quot;Attention, la division par zéro est impossible !&quot;
+sinon :
+  écrire &quot;Le résultat de la division est &quot; (dividende / diviseur) &quot;.&quot;
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Remarque</p>
+<p>Il s'agit d'un programme écrit en <strong>pseudocode</strong>. Le pseudocode permet d'écrire un bout de programme sans avoir à connaître un langage de programmation particulier. On peut l'utiliser pour commencer à développer un programme avant même de le faire sur un ordinateur, pour analyser un algorithme, etc.</p>
+<p>Le pseudocode peut servir également pour tout autre chose que l'informatique !</p>
+</div>
+<p>Comme nous le voyons avec ce bout de code, nous avons introduit deux mots importants : <code>si</code> et <code>sinon</code>. Cela va donc créer une bifurcation dans le code, ce ne seront pas les mêmes instructions qui seront exécutées si le diviseur vaut zéro ou pas. Dans d'autres situations, nous pourrions avoir besoin d'un troisième type de branchement, le <code>sinon si</code>.</p>
+<p>Prenons un autre exemple où nous devons réaliser un gâteau. Nous voulons mettre du sucre ou une alternative selon ce que nous avons sous la main - ou arrêter de préparer la recette si nous n'en avons aucune !</p>
+<div class="highlight"><pre><span></span><code>possède_sucre = faux
+possède_sirop_agave = faux
+possède_stevia = vrai
+
+si possède_sucre, alors :
+  utiliser sucre
+sinon si possède_sirop_agave, alors :
+  utiliser sirop_agave
+sinon si possède_stevia, alors :
+  utiliser stevia
+sinon :
+  arrêter
+</code></pre></div>
+<p>Avec les conditions, nous avons également la possibilité d'utiliser les opérateurs booléens.</p>
+<div class="highlight"><pre><span></span><code>vie_personnage = 100
+magie_personnage = 100
+
+si vie_personnage == 100 &amp;&amp; magie_personnage == 100, alors :
+  afficher &quot;Bravo, vous êtes une véritable légende !!!&quot;
+sinon si vie_personnage &gt; 50 || magie_personnage &gt; 50, alors :
+  afficher &quot;C&#39;est une belle performance !&quot;
+sinon si vie_personnage &gt; 1, alors :
+  afficher &quot;Ce n&#39;était pas exceptionnel.&quot;
+sinon :
+  afficher &quot;L&#39;histoire retiendra peut-être votre nom...&quot;
+</code></pre></div>
 
               
             </article>
@@ -327,29 +358,6 @@
       </main>
       
         <footer class="md-footer">
-  
-    
-      
-    
-    <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
-      
-      
-        
-        <a href="bases/intro/history/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Des cailloux à l&#39;informatique" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              Des cailloux à l'informatique
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -371,12 +379,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.top", "navigation.sections", "navigation.expand"], "search": "assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.top", "navigation.sections", "navigation.expand"], "search": "../../../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.0238f547.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.0238f547.min.js"></script>
       
-        <script src="javascripts/mathjax.js"></script>
+        <script src="../../../../javascripts/mathjax.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
